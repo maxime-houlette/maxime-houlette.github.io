@@ -130,16 +130,6 @@ div#notebook {
   background-color: #ffffff;
 }
 
-#header .header-bar {
-  background: #ffffff;
-  background-color: #ffffff;
-}
-
-body > #header .header-bar {
-  width: 100%;
-  background: #ffffff;
-}
-
 .navbar {
   border: none;
 }
@@ -295,14 +285,6 @@ body > #header .header-bar {
   transition: 200ms ease !important;
 }
 
-
-.btn-sm {
-  font-size: inherit;
-  font-weight: normal;
-  height: inherit;
-  line-height: inherit;
-}
-
 button.close {
   border: 0px none;
   font-family: sans-serif;
@@ -381,13 +363,6 @@ div.panel,
   box-shadow: none;
 }
 
-div.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0px;
-  padding-right: 5px;
-}
-
 input,
 button,
 select,
@@ -457,7 +432,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
 pre,
 code,
 form,
