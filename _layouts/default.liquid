@@ -1,18 +1,18 @@
-<header class="flex flex-col h-full">
-  <div class="mt-4 mb-10">
-    <h1 class="text-4xl font-bold font-serif leading-tight tracking-tight">
-      <a href="{{ site.baseurl }}/" class="text-white hover:text-gray-300 no-underline">
-        {{ site.first_name }}<br>{{ site.last_name }}
-      </a>
-    </h1>
-    <p class="text-gray-400 text-sm mt-3">Maître de conférences</p>
-  </div>
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include head.liquid %}
+  </head>
+  <body class="flex flex-col md:flex-row min-h-screen w-full bg-white dark:bg-gray-900">
+    
+    <aside class="w-full md:w-64 lg:w-72 bg-[#1a1a1a] text-white p-8 md:sticky md:top-0 md:h-screen overflow-y-auto">
+      {% include header.liquid %}
+    </aside>
 
-  <nav class="flex flex-col space-y-4">
-    <a href="{{ site.baseurl }}/" class="text-gray-300 hover:text-white no-underline font-medium">About</a>
-    <a href="{{ site.baseurl }}/publications/" class="text-gray-300 hover:text-white no-underline font-medium">Publications</a>
-    <a href="{{ site.baseurl }}/projects/" class="text-gray-300 hover:text-white no-underline font-medium">Projects</a>
-    <a href="{{ site.baseurl }}/cv/" class="text-gray-300 hover:text-white no-underline font-medium">CV</a>
-    <a href="{{ site.baseurl }}/teaching/" class="text-gray-300 hover:text-white no-underline font-medium">Teaching</a>
-  </nav>
-</header>
+    <main class="w-full flex-1 p-6 md:p-12 mx-auto max-w-5xl" role="main">
+      {{ content }}
+    </main>
+
+    {% include scripts.liquid %}
+  </body>
+</html>
