@@ -1,69 +1,18 @@
-<!doctype html>
-<html lang="{{ site.lang }}">
-  <head>
-    {% if page.redirect %}
-      {% if page.redirect == true %}
-        {% assign redirect = site.baseurl | append: '/' %}
-      {% elsif page.redirect contains '://' %}
-        {% assign redirect = page.redirect %}
-      {% else %}
-        {% assign redirect = page.redirect | relative_url %}
-      {% endif %}
-      <meta http-equiv="refresh" content="3; url={{ redirect }}">
-    {% endif %}
-    {% include head.liquid %}
-  </head>
+<header class="flex flex-col h-full">
+  <div class="mt-4 mb-10">
+    <h1 class="text-4xl font-bold font-serif leading-tight tracking-tight">
+      <a href="{{ site.baseurl }}/" class="text-white hover:text-gray-300 no-underline">
+        {{ site.first_name }}<br>{{ site.last_name }}
+      </a>
+    </h1>
+    <p class="text-gray-400 text-sm mt-3">Maître de conférences</p>
+  </div>
 
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-
-    <div class="container-fluid mt-4" style="max-width: 1400px;">
-      <div class="row">
-
-        <aside class="col-12 col-md-3 col-lg-2 sidebar-nav sticky-top" style="height: 100vh; overflow-y: auto; padding-top: 2rem;">
-          {% include header.liquid %}
-        </aside>
-
-        <main class="col-12 col-md-9 col-lg-10 p-4 p-md-5" role="main">
-          
-          {% if page.toc and page.toc.sidebar %}
-            {% assign toc_collapse = page.toc.collapse | default: 'expanded' %}
-            {% assign toc_collapse_depth = page.toc.collapse_depth | default: '' %}
-            {% if page.toc.sidebar == 'right' %}
-              <div class="row">
-                <div class="col-sm-9">{{ content }}</div>
-                <div class="col-sm-3">
-                  <nav
-                    id="toc-sidebar"
-                    class="sticky-top toc toc-sidebar"
-                    aria-label="Table of contents"
-                    data-toc-collapse="{{ toc_collapse }}"
-                    data-toc-collapse-depth="{{ toc_collapse_depth }}"
-                  ></nav>
-                </div>
-              </div>
-            {% else %}
-              <div class="row">
-                <div class="col-sm-3">
-                  <nav
-                    id="toc-sidebar"
-                    class="sticky-top toc toc-sidebar"
-                    aria-label="Table of contents"
-                    data-toc-collapse="{{ toc_collapse }}"
-                    data-toc-collapse-depth="{{ toc_collapse_depth }}"
-                  ></nav>
-                </div>
-                <div class="col-sm-9">{{ content }}</div>
-              </div>
-            {% endif %}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </main>
-
-      </div>
-    </div>
-    {% include footer.liquid %}
-
-    {% include scripts.liquid %}
-  </body>
-</html>
+  <nav class="flex flex-col space-y-4">
+    <a href="{{ site.baseurl }}/" class="text-gray-300 hover:text-white no-underline font-medium">About</a>
+    <a href="{{ site.baseurl }}/publications/" class="text-gray-300 hover:text-white no-underline font-medium">Publications</a>
+    <a href="{{ site.baseurl }}/projects/" class="text-gray-300 hover:text-white no-underline font-medium">Projects</a>
+    <a href="{{ site.baseurl }}/cv/" class="text-gray-300 hover:text-white no-underline font-medium">CV</a>
+    <a href="{{ site.baseurl }}/teaching/" class="text-gray-300 hover:text-white no-underline font-medium">Teaching</a>
+  </nav>
+</header>
