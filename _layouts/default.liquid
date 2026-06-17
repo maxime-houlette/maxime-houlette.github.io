@@ -21,6 +21,11 @@
         color: #222222 !important;
       }
 
+      /* ── Écraser la couleur des liens de la gem ── */
+      a {
+        color: inherit !important;
+      }
+
       /* ── Navbar horizontale de la gem — cachée ── */
       .navbar, nav.navbar, #navbar, header.navbar {
         display: none !important;
@@ -31,17 +36,23 @@
         font-family: Georgia, 'Times New Roman', serif;
         color: #ffffff;
       }
+      aside a {
+        color: #ffffff !important;
+      }
+      aside a:hover {
+        color: #cccccc !important;
+      }
       aside nav a {
         display: block;
         padding: 0.3rem 0;
         font-size: 0.85rem;
-        color: #cccccc;
+        color: #cccccc !important;
         text-decoration: none;
         transition: color 0.15s;
       }
-      aside nav a:hover { color: #ffffff; }
+      aside nav a:hover { color: #ffffff !important; }
       aside nav a.active,
-      aside nav a[aria-current="page"] { color: #ffffff; font-weight: 700; }
+      aside nav a[aria-current="page"] { color: #ffffff !important; font-weight: 700; }
       aside p { font-size: 0.78rem; color: #aaaaaa; }
 
       /* ── Contenu principal ── */
@@ -61,8 +72,8 @@
         margin-bottom: 1.5rem;
       }
       main p { margin-bottom: 1.1rem; }
-      main a { color: #2a6dbf; text-decoration: none; }
-      main a:hover { color: #1a4d8f; text-decoration: underline; }
+      main a { color: #2a6dbf !important; text-decoration: none; }
+      main a:hover { color: #1a4d8f !important; text-decoration: underline; }
 
       /* ── Footer ── */
       footer {
@@ -73,11 +84,8 @@
         text-align: center;
         background: #ffffff !important;
       }
-      footer a { color: #888; text-decoration: underline; }
-      footer a:hover { color: #222; }
-      /* Forcer la couleur du nom en blanc dans la sidebar */
-      aside a {color: #ffffff !important;}
-      aside a:hover {color: #cccccc !important;}
+      footer a { color: #888 !important; text-decoration: underline; }
+      footer a:hover { color: #222 !important; }
     </style>
   </head>
   <body class="flex flex-col md:flex-row min-h-screen w-full bg-white">
