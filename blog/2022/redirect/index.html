@@ -3,7 +3,6 @@
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://maxime-houlette.github.io/blog/2022/redirect/"> <style>
-      /* ── Variables globales — écrase la gem ── */
       :root,
       [data-theme="dark"],
       [data-theme="light"] {
@@ -14,41 +13,9 @@
         --global-footer-bg-color:   #ffffff;
         --global-footer-text-color: #888888;
       }
-
-      body {
-        background-color: #ffffff !important;
-        color: #222222 !important;
-      }
-
-      /* Navbar horizontale de la gem — cachée */
-      .navbar, nav.navbar, #navbar, header.navbar {
-        display: none !important;
-      }
-
-      /* Liens globaux */
+      body { background-color: #ffffff !important; color: #222222 !important; }
+      .navbar, nav.navbar, #navbar, header.navbar { display: none !important; }
       a { color: inherit !important; }
-
-      /* ── Sidebar ── */
-      aside h1, aside h2 {
-        font-family: Georgia, 'Times New Roman', serif;
-        color: #ffffff;
-      }
-      aside a { color: #ffffff !important; }
-      aside a:hover { color: #cccccc !important; }
-      aside nav a {
-        display: block;
-        padding: 0.3rem 0;
-        font-size: 0.85rem;
-        color: #cccccc !important;
-        text-decoration: none;
-        transition: color 0.15s;
-      }
-      aside nav a:hover { color: #ffffff !important; }
-      aside nav a.active,
-      aside nav a[aria-current="page"] { color: #ffffff !important; font-weight: 700; }
-      aside p { font-size: 0.78rem; color: #aaaaaa; }
-
-      /* ── Contenu principal ── */
       main {
         background: #ffffff !important;
         color: #222222 !important;
@@ -58,28 +25,21 @@
         padding-top: 4rem !important;
       }
       main h1:first-of-type {
-        font-size: 1.45rem;
-        font-weight: 700;
+        font-size: 1.45rem; font-weight: 700;
         border-bottom: 1px solid #e0e0e0;
-        padding-bottom: 0.6rem;
-        margin-bottom: 1.5rem;
+        padding-bottom: 0.6rem; margin-bottom: 1.5rem;
       }
       main p { margin-bottom: 1.1rem; }
       main a { color: #2a6dbf !important; text-decoration: none; }
       main a:hover { color: #1a4d8f !important; text-decoration: underline; }
-
-      /* ── Footer ── */
       footer {
-        border-top: 1px solid #e0e0e0;
-        font-family: system-ui, sans-serif;
-        font-size: 0.75rem;
-        color: #888;
-        text-align: center;
+        border-top: 1px solid #e0e0e0; font-family: system-ui, sans-serif;
+        font-size: 0.75rem; color: #888; text-align: center;
         background: #ffffff !important;
       }
       footer a { color: #888 !important; text-decoration: underline; }
       footer a:hover { color: #222 !important; }
-    </style> </head> <body class="flex flex-col md:flex-row min-h-screen w-full bg-white"> <aside style="background-color: #1a1a1a;" class="w-full md:w-64 lg:w-72 text-white p-8 md:sticky md:top-0 md:h-screen overflow-y-auto flex flex-col"> <header class="flex flex-col h-full"> <div class="mt-4"> <h1 class="text-4xl font-bold leading-tight tracking-tight mb-2" style="font-family: Georgia, 'Times New Roman', serif;"> <a href="/" style="color: #ffffff; text-decoration: none;"> Maxime<br>Houlette </a> </h1> <p class="text-sm mt-2" style="color: #aaaaaa; font-family: system-ui, sans-serif;"> Maître de conférences </p> </div> <nav class="flex flex-col mt-auto" style="gap: 0.25rem;"> <a href="/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">About</a> <a href="/publications/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Publications</a> <a href="/projects/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Projects</a> <a href="/cv/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">CV</a> <a href="/teaching/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Teaching</a> </nav> </header> </aside> <main class="w-full flex-1 p-8 md:p-14 mx-auto max-w-3xl" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">a post with redirect</h1> <p class="post-meta"> Created on February 01, 2022 </p> <p class="post-tags"> <a href="/blog/2022"> <i class="fa-solid fa-calendar fa-sm"></i> 2022 </a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>Redirecting to another page.</p> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="noopener noreferrer">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="noopener noreferrer">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/plotly/">a post with plotly.js</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/photo-gallery/">a post with image galleries</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/tabs/">a post with tabs</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/typograms/">a post with typograms</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/post-citation/">a post that can be cited</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/pseudocode/">a post with pseudo code</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/code-diff/">a post with code diff</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/advanced-images/">a post with advanced image components</a> </li> </ul> </div> </main> <script>
+    </style> </head> <body style="display: flex; flex-direction: row; min-height: 100vh; background: #ffffff;"> <aside style="background-color: #1a1a1a; color: #ffffff; width: 260px; min-width: 260px; padding: 2rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; display: flex; flex-direction: column;"> <header style="display: flex; flex-direction: column; height: 100%;"> <div style="margin-top: 1rem;"> <h1 style="font-family: Georgia, 'Times New Roman', serif; font-size: 2.25rem; font-weight: 700; line-height: 1.15; color: #ffffff; margin-bottom: 0.5rem;"> <a href="/" style="color: #ffffff; text-decoration: none;"> Maxime<br>Houlette </a> </h1> <p style="font-family: system-ui, sans-serif; font-size: 0.78rem; color: #aaaaaa; margin-top: 0.5rem;"> Maître de conférences </p> </div> <nav style="display: flex; flex-direction: column; gap: 0.25rem; margin-top: auto;"> <a href="/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">About</a> <a href="/publications/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Publications</a> <a href="/projects/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Projects</a> <a href="/cv/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">CV</a> <a href="/teaching/" style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Teaching</a> </nav> </header> </aside> <main style="flex: 1; padding: 4rem 3.5rem; max-width: 760px; background: #ffffff; color: #222222;" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">a post with redirect</h1> <p class="post-meta"> Created on February 01, 2022 </p> <p class="post-tags"> <a href="/blog/2022"> <i class="fa-solid fa-calendar fa-sm"></i> 2022 </a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>Redirecting to another page.</p> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="noopener noreferrer">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2" target="_blank" rel="noopener noreferrer">Displaying External Posts on Your al-folio Blog</a> <svg width="1rem" height="1rem" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2025/plotly/">a post with plotly.js</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/photo-gallery/">a post with image galleries</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/tabs/">a post with tabs</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/typograms/">a post with typograms</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/post-citation/">a post that can be cited</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/pseudocode/">a post with pseudo code</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/code-diff/">a post with code diff</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2024/advanced-images/">a post with advanced image components</a> </li> </ul> </div> </main> <script>
   window.alFolio = {
     compatBootstrap: false
   };
