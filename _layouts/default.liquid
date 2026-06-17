@@ -3,7 +3,6 @@
   <head>
     {% include head.liquid %}
     <style>
-      /* ── Variables globales — écrase la gem ── */
       :root,
       [data-theme="dark"],
       [data-theme="light"] {
@@ -14,41 +13,9 @@
         --global-footer-bg-color:   #ffffff;
         --global-footer-text-color: #888888;
       }
-
-      body {
-        background-color: #ffffff !important;
-        color: #222222 !important;
-      }
-
-      /* Navbar horizontale de la gem — cachée */
-      .navbar, nav.navbar, #navbar, header.navbar {
-        display: none !important;
-      }
-
-      /* Liens globaux */
+      body { background-color: #ffffff !important; color: #222222 !important; }
+      .navbar, nav.navbar, #navbar, header.navbar { display: none !important; }
       a { color: inherit !important; }
-
-      /* ── Sidebar ── */
-      aside h1, aside h2 {
-        font-family: Georgia, 'Times New Roman', serif;
-        color: #ffffff;
-      }
-      aside a { color: #ffffff !important; }
-      aside a:hover { color: #cccccc !important; }
-      aside nav a {
-        display: block;
-        padding: 0.3rem 0;
-        font-size: 0.85rem;
-        color: #cccccc !important;
-        text-decoration: none;
-        transition: color 0.15s;
-      }
-      aside nav a:hover { color: #ffffff !important; }
-      aside nav a.active,
-      aside nav a[aria-current="page"] { color: #ffffff !important; font-weight: 700; }
-      aside p { font-size: 0.78rem; color: #aaaaaa; }
-
-      /* ── Contenu principal ── */
       main {
         background: #ffffff !important;
         color: #222222 !important;
@@ -58,37 +25,29 @@
         padding-top: 4rem !important;
       }
       main h1:first-of-type {
-        font-size: 1.45rem;
-        font-weight: 700;
+        font-size: 1.45rem; font-weight: 700;
         border-bottom: 1px solid #e0e0e0;
-        padding-bottom: 0.6rem;
-        margin-bottom: 1.5rem;
+        padding-bottom: 0.6rem; margin-bottom: 1.5rem;
       }
       main p { margin-bottom: 1.1rem; }
       main a { color: #2a6dbf !important; text-decoration: none; }
       main a:hover { color: #1a4d8f !important; text-decoration: underline; }
-
-      /* ── Footer ── */
       footer {
-        border-top: 1px solid #e0e0e0;
-        font-family: system-ui, sans-serif;
-        font-size: 0.75rem;
-        color: #888;
-        text-align: center;
+        border-top: 1px solid #e0e0e0; font-family: system-ui, sans-serif;
+        font-size: 0.75rem; color: #888; text-align: center;
         background: #ffffff !important;
       }
       footer a { color: #888 !important; text-decoration: underline; }
       footer a:hover { color: #222 !important; }
     </style>
   </head>
-  <body class="flex flex-col md:flex-row min-h-screen w-full bg-white">
+  <body style="display: flex; flex-direction: row; min-height: 100vh; background: #ffffff;">
 
-    <aside style="background-color: #1a1a1a;"
-           class="w-full md:w-64 lg:w-72 text-white p-8 md:sticky md:top-0 md:h-screen overflow-y-auto flex flex-col">
+    <aside style="background-color: #1a1a1a; color: #ffffff; width: 260px; min-width: 260px; padding: 2rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; display: flex; flex-direction: column;">
       {% include header.liquid %}
     </aside>
 
-    <main class="w-full flex-1 p-8 md:p-14 mx-auto max-w-3xl" role="main">
+    <main style="flex: 1; padding: 4rem 3.5rem; max-width: 760px; background: #ffffff; color: #222222;" role="main">
       {{ content }}
     </main>
 
