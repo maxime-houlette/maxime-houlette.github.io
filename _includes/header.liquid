@@ -1,33 +1,35 @@
 <header class="flex flex-col h-full">
-  <div class="mt-4 mb-10">
-    <h1 class="text-4xl font-bold leading-tight tracking-tight mb-2" style="font-family: Georgia, 'Times New Roman', serif;">
-      <a href="{{ site.baseurl }}/" class="text-white hover:text-gray-200 no-underline">
+
+  <!-- Nom et titre en haut -->
+  <div class="mt-4">
+    <h1 class="text-4xl font-bold leading-tight tracking-tight mb-2"
+        style="font-family: Georgia, 'Times New Roman', serif;">
+      <a href="{{ site.baseurl }}/" style="color: #ffffff; text-decoration: none;">
         {{ site.first_name }}<br>{{ site.last_name }}
       </a>
     </h1>
-    <p class="text-sm mt-2" style="color: #aaaaaa; font-family: system-ui, sans-serif;">Maître de conférences</p>
+    <p class="text-sm mt-2" style="color: #aaaaaa; font-family: system-ui, sans-serif;">
+      Maître de conférences
+    </p>
   </div>
 
-  <nav class="flex flex-col space-y-1">
+  <!-- Navigation poussée vers le bas -->
+  <nav class="flex flex-col mt-auto" style="gap: 0.25rem;">
     <a href="{{ site.baseurl }}/"
-       class="no-underline text-sm py-1 transition-colors duration-150"
-       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;"
        onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">About</a>
     <a href="{{ site.baseurl }}/publications/"
-       class="no-underline text-sm py-1 transition-colors duration-150"
-       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;"
        onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Publications</a>
     <a href="{{ site.baseurl }}/projects/"
-       class="no-underline text-sm py-1 transition-colors duration-150"
-       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;"
        onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Projects</a>
     <a href="{{ site.baseurl }}/cv/"
-       class="no-underline text-sm py-1 transition-colors duration-150"
-       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;"
        onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">CV</a>
     <a href="{{ site.baseurl }}/teaching/"
-       class="no-underline text-sm py-1 transition-colors duration-150"
-       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       style="font-family: system-ui, sans-serif; font-size: 0.85rem; color: #cccccc; text-decoration: none; padding: 0.3rem 0;"
        onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Teaching</a>
   </nav>
+
 </header>
