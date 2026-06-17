@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: submenus
 nav: true
 nav_order: 8
