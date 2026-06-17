@@ -21,6 +21,11 @@
         color: #222222 !important;
       }
 
+      /* ── Écraser la couleur des liens de la gem ── */
+      a {
+        color: inherit !important;
+      }
+
       /* ── Navbar horizontale de la gem — cachée ── */
       .navbar, nav.navbar, #navbar, header.navbar {
         display: none !important;
@@ -31,17 +36,23 @@
         font-family: Georgia, 'Times New Roman', serif;
         color: #ffffff;
       }
+      aside a {
+        color: #ffffff !important;
+      }
+      aside a:hover {
+        color: #cccccc !important;
+      }
       aside nav a {
         display: block;
         padding: 0.3rem 0;
         font-size: 0.85rem;
-        color: #cccccc;
+        color: #cccccc !important;
         text-decoration: none;
         transition: color 0.15s;
       }
-      aside nav a:hover { color: #ffffff; }
+      aside nav a:hover { color: #ffffff !important; }
       aside nav a.active,
-      aside nav a[aria-current="page"] { color: #ffffff; font-weight: 700; }
+      aside nav a[aria-current="page"] { color: #ffffff !important; font-weight: 700; }
       aside p { font-size: 0.78rem; color: #aaaaaa; }
 
       /* ── Contenu principal ── */
@@ -61,8 +72,8 @@
         margin-bottom: 1.5rem;
       }
       main p { margin-bottom: 1.1rem; }
-      main a { color: #2a6dbf; text-decoration: none; }
-      main a:hover { color: #1a4d8f; text-decoration: underline; }
+      main a { color: #2a6dbf !important; text-decoration: none; }
+      main a:hover { color: #1a4d8f !important; text-decoration: underline; }
 
       /* ── Footer ── */
       footer {
@@ -73,11 +84,8 @@
         text-align: center;
         background: #ffffff !important;
       }
-      footer a { color: #888; text-decoration: underline; }
-      footer a:hover { color: #222; }
-      /* Forcer la couleur du nom en blanc dans la sidebar */
-      aside a {color: #ffffff !important;}
-      aside a:hover {color: #cccccc !important;}
+      footer a { color: #888 !important; text-decoration: underline; }
+      footer a:hover { color: #222 !important; }
     </style> </head> <body class="flex flex-col md:flex-row min-h-screen w-full bg-white"> <aside class="w-full md:w-64 lg:w-72 bg-[#1a1a1a] text-white p-8 md:sticky md:top-0 md:h-screen overflow-y-auto flex flex-col gap-2"> <header class="flex flex-col h-full"> <div class="mt-4 mb-10"> <h1 class="text-4xl font-bold leading-tight tracking-tight mb-2" style="font-family: Georgia, 'Times New Roman', serif;"> <a href="/" class="text-white hover:text-gray-200 no-underline"> Maxime<br>Houlette </a> </h1> <p class="text-sm mt-2" style="color: #aaaaaa; font-family: system-ui, sans-serif;">Maître de conférences</p> </div> <nav class="flex flex-col space-y-1"> <a href="/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">About</a> <a href="/publications/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Publications</a> <a href="/projects/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Projects</a> <a href="/cv/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">CV</a> <a href="/teaching/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Teaching</a> </nav> </header> </aside> <main class="w-full flex-1 p-8 md:p-14 mx-auto max-w-3xl" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">a post with diagrams</h1> <p class="post-meta"> Created on July 04, 2021 </p> <p class="post-tags"> <a href="/blog/2021"> <i class="fa-solid fa-calendar fa-sm"></i> 2021 </a>   ·   <a href="/blog/tag/formatting"> <i class="fa-solid fa-hashtag fa-sm"></i> formatting</a>   <a href="/blog/tag/diagrams"> <i class="fa-solid fa-hashtag fa-sm"></i> diagrams</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>This theme supports generating various diagrams from a text description using <a href="https://mermaid-js.github.io/mermaid/" target="\_blank" rel="external nofollow noopener">mermaid</a>. Previously, this was done using the <a href="https://github.com/zhustec/jekyll-diagrams" target="\_blank" rel="external nofollow noopener">jekyll-diagrams</a> plugin. For more information on this matter, see the <a href="https://github.com/alshedivat/al-folio/issues/1609#issuecomment-1656995674" rel="external nofollow noopener" target="_blank">related issue</a>.</p> <p>To enable mermaid, you have to put the following in this post frontmatter:</p> <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">mermaid</span><span class="pi">:</span>
   <span class="na">enabled</span><span class="pi">:</span> <span class="kc">true</span>
   <span class="na">zoomable</span><span class="pi">:</span> <span class="kc">true</span>
