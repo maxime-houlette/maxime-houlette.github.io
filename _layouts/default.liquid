@@ -2,14 +2,41 @@
 <html lang="{{ site.lang }}">
   <head>
     {% include head.liquid %}
+    <style>
+      /* Sidebar typography & nav */
+      aside h1, aside h2 { font-family: Georgia, 'Times New Roman', serif; }
+      aside nav a       { display: block; padding: 0.3rem 0; font-size: 0.85rem;
+                          color: #cccccc; text-decoration: none; transition: color 0.15s; }
+      aside nav a:hover { color: #ffffff; }
+      aside nav a.active,
+      aside nav a[aria-current="page"] { color: #ffffff; font-weight: 700; }
+      aside p.subtitle  { font-size: 0.78rem; color: #aaaaaa; }
+
+      /* Main content typography */
+      main              { font-family: Georgia, 'Times New Roman', serif;
+                          font-size: 0.97rem; line-height: 1.7; color: #222222; }
+      main h1.page-title,
+      main h1:first-of-type { font-size: 1.45rem; font-weight: 700;
+                              border-bottom: 1px solid #e0e0e0;
+                              padding-bottom: 0.6rem; margin-bottom: 1.5rem; }
+      main p            { margin-bottom: 1.1rem; }
+      main a            { color: #2a6dbf; text-decoration: none; }
+      main a:hover      { color: #1a4d8f; text-decoration: underline; }
+
+      /* Footer */
+      footer            { border-top: 1px solid #e0e0e0; font-family: system-ui, sans-serif;
+                          font-size: 0.75rem; color: #888; text-align: center; }
+      footer a          { color: #888; text-decoration: underline; }
+      footer a:hover    { color: #222; }
+    </style>
   </head>
   <body class="flex flex-col md:flex-row min-h-screen w-full bg-white dark:bg-gray-900">
-    
-    <aside class="w-full md:w-64 lg:w-72 bg-[#1a1a1a] text-white p-8 md:sticky md:top-0 md:h-screen overflow-y-auto">
+
+    <aside class="w-full md:w-64 lg:w-72 bg-[#1a1a1a] text-white p-8 md:sticky md:top-0 md:h-screen overflow-y-auto flex flex-col gap-2">
       {% include header.liquid %}
     </aside>
 
-    <main class="w-full flex-1 p-6 md:p-12 mx-auto max-w-5xl" role="main">
+    <main class="w-full flex-1 p-8 md:p-14 mx-auto max-w-3xl" role="main">
       {{ content }}
     </main>
 

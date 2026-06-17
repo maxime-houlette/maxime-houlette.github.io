@@ -1,18 +1,33 @@
 <header class="flex flex-col h-full">
-  <div class="mt-4 mb-12">
-    <h1 class="text-4xl md:text-5xl font-bold font-serif leading-tight tracking-tight mb-2">
-      <a href="{{ site.baseurl }}/" class="text-white hover:text-gray-300 no-underline">
+  <div class="mt-4 mb-10">
+    <h1 class="text-4xl font-bold leading-tight tracking-tight mb-2" style="font-family: Georgia, 'Times New Roman', serif;">
+      <a href="{{ site.baseurl }}/" class="text-white hover:text-gray-200 no-underline">
         {{ site.first_name }}<br>{{ site.last_name }}
       </a>
     </h1>
-    <p class="text-gray-400 text-sm mt-3">Maître de conférences</p>
+    <p class="text-sm mt-2" style="color: #aaaaaa; font-family: system-ui, sans-serif;">Maître de conférences</p>
   </div>
 
-  <nav class="flex flex-col space-y-4">
-    <a href="{{ site.baseurl }}/" class="text-gray-300 hover:text-white no-underline text-lg">About</a>
-    <a href="{{ site.baseurl }}/publications/" class="text-gray-300 hover:text-white no-underline text-lg">Publications</a>
-    <a href="{{ site.baseurl }}/projects/" class="text-gray-300 hover:text-white no-underline text-lg">Projects</a>
-    <a href="{{ site.baseurl }}/cv/" class="text-gray-300 hover:text-white no-underline text-lg">CV</a>
-    <a href="{{ site.baseurl }}/teaching/" class="text-gray-300 hover:text-white no-underline text-lg">Teaching</a>
+  <nav class="flex flex-col space-y-1">
+    <a href="{{ site.baseurl }}/"
+       class="no-underline text-sm py-1 transition-colors duration-150"
+       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">About</a>
+    <a href="{{ site.baseurl }}/publications/"
+       class="no-underline text-sm py-1 transition-colors duration-150"
+       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Publications</a>
+    <a href="{{ site.baseurl }}/projects/"
+       class="no-underline text-sm py-1 transition-colors duration-150"
+       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Projects</a>
+    <a href="{{ site.baseurl }}/cv/"
+       class="no-underline text-sm py-1 transition-colors duration-150"
+       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">CV</a>
+    <a href="{{ site.baseurl }}/teaching/"
+       class="no-underline text-sm py-1 transition-colors duration-150"
+       style="font-family: system-ui, sans-serif; color: #cccccc;"
+       onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Teaching</a>
   </nav>
 </header>
