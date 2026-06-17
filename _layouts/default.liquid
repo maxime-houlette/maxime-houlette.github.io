@@ -30,6 +30,23 @@
       footer a:hover    { color: #222; }
       main { background: #ffffff !important; color: #222222 !important; }
       body { background: #ffffff !important; }
+
+      /* Écraser les variables de la gem */
+      :root,
+      [data-theme="dark"],
+      [data-theme="light"] {
+        --global-bg-color: #ffffff !important;
+        --global-text-color: #222222 !important;
+        --global-theme-color: #2a6dbf !important;
+        --global-hover-color: #1a4d8f !important;
+        --global-footer-bg-color: #ffffff !important;
+        --global-footer-text-color: #888888 !important;
+      }
+
+      body {
+        background-color: #ffffff !important;
+        color: #222222 !important;
+      }
     </style>
   </head>
   <body class="flex flex-col md:flex-row min-h-screen w-full bg-white">
