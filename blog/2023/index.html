@@ -30,6 +30,23 @@
       footer a:hover    { color: #222; }
       main { background: #ffffff !important; color: #222222 !important; }
       body { background: #ffffff !important; }
+
+      /* Écraser les variables de la gem */
+      :root,
+      [data-theme="dark"],
+      [data-theme="light"] {
+        --global-bg-color: #ffffff !important;
+        --global-text-color: #222222 !important;
+        --global-theme-color: #2a6dbf !important;
+        --global-hover-color: #1a4d8f !important;
+        --global-footer-bg-color: #ffffff !important;
+        --global-footer-text-color: #888888 !important;
+      }
+
+      body {
+        background-color: #ffffff !important;
+        color: #222222 !important;
+      }
     </style> </head> <body class="flex flex-col md:flex-row min-h-screen w-full bg-white"> <aside class="w-full md:w-64 lg:w-72 bg-[#1a1a1a] text-white p-8 md:sticky md:top-0 md:h-screen overflow-y-auto flex flex-col gap-2"> <header class="flex flex-col h-full"> <div class="mt-4 mb-10"> <h1 class="text-4xl font-bold leading-tight tracking-tight mb-2" style="font-family: Georgia, 'Times New Roman', serif;"> <a href="/" class="text-white hover:text-gray-200 no-underline"> Maxime<br>Houlette </a> </h1> <p class="text-sm mt-2" style="color: #aaaaaa; font-family: system-ui, sans-serif;">Maître de conférences</p> </div> <nav class="flex flex-col space-y-1"> <a href="/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">About</a> <a href="/publications/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Publications</a> <a href="/projects/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Projects</a> <a href="/cv/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">CV</a> <a href="/teaching/" class="no-underline text-sm py-1 transition-colors duration-150" style="font-family: system-ui, sans-serif; color: #cccccc;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#cccccc'">Teaching</a> </nav> </header> </aside> <main class="w-full flex-1 p-8 md:p-14 mx-auto max-w-3xl" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> <i class="fa-solid fa-calendar fa-sm"></i> 2023</h1> <p class="post-description">an archive of posts from this year</p> </header> <article class="archive"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row">Dec 12, 2023</th> <td> <a class="post-link" href="/blog/2023/tikzjax/">a post with TikZJax</a> </td> </tr> <tr> <th scope="row">Jul 12, 2023</th> <td> <a class="post-link" href="/blog/2023/post-bibliography/">a post with bibliography</a> </td> </tr> <tr> <th scope="row">Jul 04, 2023</th> <td> <a class="post-link" href="/blog/2023/jupyter-notebook/">a post with jupyter notebook</a> </td> </tr> <tr> <th scope="row">May 12, 2023</th> <td> <a class="post-link" href="/blog/2023/custom-blockquotes/">a post with custom blockquotes</a> </td> </tr> <tr> <th scope="row">Apr 25, 2023</th> <td> <a class="post-link" href="/blog/2023/sidebar-table-of-contents/">a post with table of contents on a sidebar</a> </td> </tr> <tr> <th scope="row">Apr 25, 2023</th> <td> <a class="post-link" href="/blog/2023/audios/">a post with audios</a> </td> </tr> <tr> <th scope="row">Apr 24, 2023</th> <td> <a class="post-link" href="/blog/2023/videos/">a post with videos</a> </td> </tr> <tr> <th scope="row">Mar 20, 2023</th> <td> <a class="post-link" href="/blog/2023/tables/">displaying beautiful interactive tables</a> </td> </tr> <tr> <th scope="row">Mar 20, 2023</th> <td> <a class="post-link" href="/blog/2023/table-of-contents/">a post with table of contents</a> </td> </tr> </table> </div> </article> </div> </main> <script>
   window.alFolio = {
     compatBootstrap: false
