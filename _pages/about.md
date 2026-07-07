@@ -19,14 +19,6 @@ latest_posts:
   enabled: false
 ---
 
-I am a maître de conférences (associate professor) at the [Laboratoire de votre laboratoire](https://example.com) at Université de votre université (Ville, France). I was previously a postdoctoral researcher at [Université X](https://example.com) with [Nom du superviseur](https://example.com). I did my PhD at Université Y under the supervision of [Nom directeur de thèse](https://example.com).
-
-My research focuses on [décrivez vos thèmes de recherche principaux].
-
-I also work on [autre thème de recherche]. Lecture notes on this topic are available [here](https://example.com).
-
-I am the co-organiser of the [Nom du groupe de travail](https://example.com), a working group on [sujet] for scientific computing.
-
-You can reach me at firstname.lastname@universite.fr
+I am a PhD student in applied mathematics, supervised by [Alexandre Ern](https://cermics.enpc.fr/~ern/home.html) (CERMICS, École nationale des ponts et chaussées). My research focuses on the analysis of discontinuous Galerkin methods for wave propagation problems, specifically, the analysis of pre-asymptotic error estimates in the frequency regime, as well as its extension to the time-dependent wave equation.
 
 [Github](https://github.com/maxime-houlette), [ArXiv](https://arxiv.org).
