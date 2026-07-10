@@ -44,9 +44,9 @@ sections:
         role: "Mathematical Modelling — Master 2"
         bullets:
           - "Functional & Numerical Analysis, Finite Element Methods, Krylov Methods, Linear and Non-Linear Approximation, Spectral Methods, Discontinuous Galerkin Methods"
-      - place: "École Nationale des Ponts et Chaussées, Institut Polytechnique de Paris — Paris, France"
+      - place: "École nationale des ponts et chaussées — Paris, France"
         date: "2022 – Present"
-        role: "Génie Mécanique des Matériaux — Master 1"
+        role: "Génie Mécanique des Matériaux — Master 1 (Institut Polytechnique de Paris)"
         bullets:
           - "Physical Mechanics of Materials, Structural Mechanics, Incompressible Fluid Mechanics, Finite Element Theory"
       - place: "Lycée Malherbe — Caen, France"
