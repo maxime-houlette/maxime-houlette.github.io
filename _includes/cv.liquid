@@ -1,0 +1,39 @@
+{% for section in site.data.cv.sections %}
+<div style="margin-bottom: 2.5rem;">
+
+  <h2 style="font-family: Georgia, serif; font-size: 1.2rem; font-weight: 700;
+              border-bottom: 1px solid #e0e0e0; padding-bottom: 0.4rem;
+              margin-bottom: 1.2rem; color: #222;">
+    {{ section.title }}
+  </h2>
+
+  {% if section.type == "skills" %}
+    {% for item in section.items %}
+    <p style="margin: 0 0 0.4rem 0; font-size: 0.95rem;">
+      <strong>{{ item.label }}</strong>: {{ item.content }}
+    </p>
+    {% endfor %}
+
+  {% elsif section.type == "entries" %}
+    {% for item in section.items %}
+    <div style="margin-bottom: 1.4rem;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+        <strong style="font-size: 0.97rem;">{{ item.place }}</strong>
+        <span style="font-size: 0.85rem; color: #666; font-style: italic; white-space: nowrap;">{{ item.date }}</span>
+      </div>
+      {% if item.role != "" %}
+      <p style="margin: 0.1rem 0 0.4rem 0; font-style: italic; font-size: 0.9rem; color: #444;">{{ item.role }}</p>
+      {% endif %}
+      {% if item.bullets.size > 0 %}
+      <ul style="margin: 0.3rem 0 0 1.2rem; padding: 0;">
+        {% for bullet in item.bullets %}
+        <li style="font-size: 0.92rem; margin-bottom: 0.25rem; color: #333;">{{ bullet }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  {% endif %}
+
+</div>
+{% endfor %}
