@@ -43,33 +43,28 @@ permalink: /
 <p class="section-title">About me</p>
 
 <p>
-  I am a PhD student in applied mathematics, supervised by
-  <a href="https://cermics.enpc.fr/~ern/">Alexandre Ern</a>
-  (CERMICS, École nationale des ponts et chaussées).
-  My research focuses on the analysis of discontinuous Galerkin methods
-  for wave propagation problems, specifically the analysis of pre-asymptotic
-  error estimates in the frequency regime, as well as its extension to the
-  time-dependent wave equation.
+I am a PhD student in applied mathematics, supervised by
+<a href="https://cermics.enpc.fr/~ern/home.html">Alexandre Ern</a>
+(CERMICS, École nationale des ponts et chaussées) and
+<a href="https://tchaumont.github.io/">Théophile Chaumont-Frelet</a>
+(Inria, Univ. Lille).
 </p>
 
 <p>
-  [Ajoutez ici d'autres informations sur vous.]
 </p>
 
 <p class="section-title">Education</p>
 
 <ul class="edu-list">
-  <li>PhD in Applied Mathematics — <a href="https://cermics-lab.enpc.fr">CERMICS</a>, École des Ponts ParisTech (2025 – Present)</li>
-  <li>Master 2 in Mathematical Modelling — <a href="https://www.sorbonne-universite.fr">Sorbonne Université</a> (2025)</li>
-  <li>Master 1, Génie Mécanique des Matériaux — École des Ponts, Institut Polytechnique de Paris (2024)</li>
-  <li>Classes Préparatoires MPSI–MP* — Lycée Malherbe, Caen (2020–2022)</li>
+  <li>Engineering degree from <a href="https://ecoledesponts.fr/">École nationale des ponts et chaussées</a></li>
+  <li>Master's degree in <a href="https://www.ljll.fr/MathModel/presentation/organisation.html">Mathematical Modelling</a></li>
+</ul> from <a href="https://www.sorbonne-universite.fr/">Sorbonne Université</a></li>
 </ul>
 
 <p class="section-title">Research interests</p>
 
 <p>
-  [Décrivez vos thèmes de recherche : méthodes de Galerkin discontinues,
-  équation de Helmholtz, estimées pré-asymptotiques, équation des ondes dépendante du temps.]
+My research focuses on the analysis of discontinuous Galerkin methods for wave propagation problems, specifically, the analysis of pre-asymptotic error estimates in the frequency regime, as well as its extension to the time-dependent wave equation.
 </p>
 
 </div>
