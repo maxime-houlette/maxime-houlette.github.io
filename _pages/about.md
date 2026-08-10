@@ -57,8 +57,7 @@ I am a PhD student in applied mathematics, supervised by
 
 <ul class="edu-list">
   <li>Engineering degree from <a href="https://ecoledesponts.fr/">École nationale des ponts et chaussées</a></li>
-  <li>Master's degree in <a href="https://www.ljll.fr/MathModel/presentation/organisation.html">Mathematical Modelling</a></li>
-</ul> from <a href="https://www.sorbonne-universite.fr/">Sorbonne Université</a></li>
+  <li>Master's degree in <a href="https://www.ljll.fr/MathModel/presentation/organisation.html">Mathematical Modelling</a></li> from <a href="https://www.sorbonne-universite.fr/">Sorbonne Université</a></li>
 </ul>
 
 <p class="section-title">Research interests</p>
