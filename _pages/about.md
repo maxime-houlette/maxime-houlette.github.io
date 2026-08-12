@@ -43,11 +43,11 @@ permalink: /
 <p class="section-title">About me</p>
 
 <p>
-I am a PhD student in applied mathematics, supervised by
+<!-- I am a PhD student in applied mathematics, supervised by
 <a href="https://cermics.enpc.fr/~ern/home.html">Alexandre Ern</a>
 (CERMICS, École nationale des ponts et chaussées) and
 <a href="https://tchaumont.github.io/">Théophile Chaumont-Frelet</a>
-(Inria, Univ. Lille).
+(Inria, Univ. Lille). -->
 </p>
 
 <p>
@@ -63,7 +63,7 @@ I am a PhD student in applied mathematics, supervised by
 <p class="section-title">Research interests</p>
 
 <p>
-My research focuses on the analysis of discontinuous Galerkin methods for wave propagation problems, specifically, the analysis of pre-asymptotic error estimates in the frequency regime, as well as its extension to the time-dependent wave equation.
+<!-- My research focuses on the analysis of discontinuous Galerkin methods for wave propagation problems, specifically, the analysis of pre-asymptotic error estimates in the frequency regime, as well as its extension to the time-dependent wave equation. -->
 </p>
 
 </div>
