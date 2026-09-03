@@ -71,9 +71,7 @@
 
       /* ── Mobile ── */
       @media (max-width: 768px) {
-        body {
-          flex-direction: column !important;
-        }
+        body { flex-direction: column !important; }
         aside {
           position: relative !important;
           width: 100% !important;
@@ -82,20 +80,17 @@
           min-height: unset !important;
           text-align: center;
           align-items: center;
-          padding: 2rem 1.5rem;
+          padding: 1.2rem 1.5rem;  /* ← padding réduit */
         }
-        aside header {
-          align-items: center !important;
-          width: 100%;
-        }
-        aside nav {
-          margin-top: 1.5rem !important;
-        }
+        aside header { align-items: center !important; width: 100%; }
+        aside nav { margin-top: 1rem !important; }
         main {
           margin-left: 0 !important;
           padding: 2rem 1.5rem !important;
           max-width: 100% !important;
         }
+        /* Cacher les icônes de contact sur mobile */
+        .contact-icons { display: none !important; }
       }
     </style>
   </head>
