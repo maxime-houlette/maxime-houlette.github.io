@@ -18,7 +18,6 @@
       :root {
         --mh-page:   #f6f7fb;
         --mh-ink:    #1f2433;
-        --mh-navy:   #1e3a5f;
         --mh-accent: #2f5ec4;
       }
 
@@ -35,15 +34,15 @@
 
       .navbar, nav.navbar, #navbar, header.navbar { display: none !important; }
       a { color: inherit !important; }
-      aside a { color: #aaaaaa !important; }
+      aside a { color: #dce5f8 !important; }
       aside a:hover { color: #ffffff !important; }
 
       /* ── Sidebar ── */
       aside {
-        background-color: var(--mh-navy);
+        background-color: var(--mh-accent);
         color: #ffffff;
-        /* solid offset "shade" in accent blue, then a soft drop shadow */
-        box-shadow: 6px 0 0 var(--mh-accent), 14px 0 32px rgba(30, 58, 95, 0.18);
+        /* soft drop shadow onto the page */
+        box-shadow: 8px 0 32px rgba(30, 58, 95, 0.18);
         z-index: 2;
         width: 260px;
         min-width: 260px;
@@ -60,7 +59,7 @@
       /* ── Contenu principal ── */
       main {
         flex: 1;
-        margin-left: 266px;
+        margin-left: 260px;
         padding: 4rem 4rem;
         max-width: 780px;
         background: transparent !important;
@@ -107,14 +106,14 @@
       aside nav .nav-item {
         font-family: system-ui, sans-serif;
         font-size: 0.88rem;
-        color: #b8c2d3 !important;
+        color: #dce5f8 !important;
         text-decoration: none;
         padding: 0.35rem 0 0.35rem 0.85rem;
         border-left: 3px solid transparent;
         transition: color 0.15s, border-color 0.15s;
       }
       aside nav .nav-item:hover { color: #ffffff !important; border-left-color: rgba(255, 255, 255, 0.35); }
-      aside nav .nav-item.active { color: #ffffff !important; font-weight: 600; border-left-color: #7fa6f0; }
+      aside nav .nav-item.active { color: #ffffff !important; font-weight: 600; border-left-color: #ffffff; }
 
       footer { display: none !important; }
 
@@ -130,7 +129,7 @@
           text-align: center;
           align-items: center;
           padding: 1.2rem 1.5rem;  /* ← padding réduit */
-          box-shadow: 0 6px 0 var(--mh-accent), 0 14px 28px rgba(30, 58, 95, 0.15);
+          box-shadow: 0 8px 28px rgba(30, 58, 95, 0.15);
         }
         aside header { align-items: center !important; width: 100%; }
         aside nav { margin-top: 1rem !important; }
@@ -142,7 +141,7 @@
         /* Cacher les icônes de contact sur mobile */
         .contact-icons { display: none !important; }
       }
-    </style> </head> <body> <aside> <header style="display: flex; flex-direction: column; height: 100%;"> <div style="margin-top: 1rem;"> <h1 style="font-family: Georgia, 'Times New Roman', serif; font-size: 2.25rem; font-weight: 700; line-height: 1.15; color: #ffffff; margin-bottom: 0.5rem;"> <a href="/" style="color: #ffffff !important; text-decoration: none;"> Maxime<br>Houlette </a> </h1> <p style="font-family: system-ui, sans-serif; font-size: 0.78rem; color: #aaaaaa; margin-top: 0.5rem;"> PhD student at CERMICS (École nationale des ponts et chaussées) </p> </div> <div class="contact-icons" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem;"> <span style="display: flex; align-items: center; gap: 0.6rem; color: #aaaaaa; font-size: 0.82rem; font-family: system-ui, sans-serif;"> <i class="fas fa-map-marker-alt" style="width: 16px; text-align: center;"></i> Paris, France </span> <a href="mailto:maxime.houlette@enpc.fr" style="display: flex; align-items: center; gap: 0.6rem; color: #aaaaaa; text-decoration: none; font-size: 0.82rem; font-family: system-ui, sans-serif;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#aaaaaa'"> <i class="fas fa-envelope" style="width: 16px; text-align: center;"></i> maxime.houlette@enpc.fr </a> <a href="https://github.com/maxime-houlette" target="_blank" style="display: flex; align-items: center; gap: 0.6rem; color: #aaaaaa; text-decoration: none; font-size: 0.82rem; font-family: system-ui, sans-serif;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#aaaaaa'" rel="external nofollow noopener"> <i class="fab fa-github" style="width: 16px; text-align: center;"></i> GitHub </a> <a href="https://www.linkedin.com/in/maxime-houlette" target="_blank" style="display: flex; align-items: center; gap: 0.6rem; color: #aaaaaa; text-decoration: none; font-size: 0.82rem; font-family: system-ui, sans-serif;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#aaaaaa'" rel="external nofollow noopener"> <i class="fab fa-linkedin" style="width: 16px; text-align: center;"></i> LinkedIn </a> </div> <nav style="display: flex; flex-direction: column; gap: 0.15rem; margin-top: auto;"> <a href="/" class="nav-item">About</a> <a href="/publications/" class="nav-item">Publications</a> <a href="/projects/" class="nav-item">Projects</a> <a href="/assets/pdf/cv_Maxime_Houlette.pdf" target="_blank" class="nav-item">CV</a> <a href="/teaching/" class="nav-item">Teaching</a> </nav> </header> </aside> <main role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> <i class="fa-solid fa-hashtag fa-sm"></i> google</h1> <p class="post-description">an archive of posts with this tag</p> </header> <article class="archive"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row">May 14, 2024</th> <td> <a class="post-link" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> </td> </tr> </table> </div> </article> </div> </main> <script>
+    </style> </head> <body> <aside> <header style="display: flex; flex-direction: column; height: 100%;"> <div style="margin-top: 1rem;"> <h1 style="font-family: Georgia, 'Times New Roman', serif; font-size: 2.25rem; font-weight: 700; line-height: 1.15; color: #ffffff; margin-bottom: 0.5rem;"> <a href="/" style="color: #ffffff !important; text-decoration: none;"> Maxime<br>Houlette </a> </h1> <p style="font-family: system-ui, sans-serif; font-size: 0.78rem; color: #dce5f8; margin-top: 0.5rem;"> PhD student at CERMICS (École nationale des ponts et chaussées) </p> </div> <div class="contact-icons" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem;"> <span style="display: flex; align-items: center; gap: 0.6rem; color: #dce5f8; font-size: 0.82rem; font-family: system-ui, sans-serif;"> <i class="fas fa-map-marker-alt" style="width: 16px; text-align: center;"></i> Paris, France </span> <a href="mailto:maxime.houlette@enpc.fr" style="display: flex; align-items: center; gap: 0.6rem; color: #dce5f8; text-decoration: none; font-size: 0.82rem; font-family: system-ui, sans-serif;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#dce5f8'"> <i class="fas fa-envelope" style="width: 16px; text-align: center;"></i> maxime.houlette@enpc.fr </a> <a href="https://github.com/maxime-houlette" target="_blank" style="display: flex; align-items: center; gap: 0.6rem; color: #dce5f8; text-decoration: none; font-size: 0.82rem; font-family: system-ui, sans-serif;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#dce5f8'" rel="external nofollow noopener"> <i class="fab fa-github" style="width: 16px; text-align: center;"></i> GitHub </a> <a href="https://www.linkedin.com/in/maxime-houlette" target="_blank" style="display: flex; align-items: center; gap: 0.6rem; color: #dce5f8; text-decoration: none; font-size: 0.82rem; font-family: system-ui, sans-serif;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#dce5f8'" rel="external nofollow noopener"> <i class="fab fa-linkedin" style="width: 16px; text-align: center;"></i> LinkedIn </a> </div> <nav style="display: flex; flex-direction: column; gap: 0.15rem; margin-top: auto;"> <a href="/" class="nav-item">About</a> <a href="/publications/" class="nav-item">Publications</a> <a href="/projects/" class="nav-item">Projects</a> <a href="/assets/pdf/cv_Maxime_Houlette.pdf" target="_blank" class="nav-item">CV</a> <a href="/teaching/" class="nav-item">Teaching</a> </nav> </header> </aside> <main role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> <i class="fa-solid fa-hashtag fa-sm"></i> google</h1> <p class="post-description">an archive of posts with this tag</p> </header> <article class="archive"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row">May 14, 2024</th> <td> <a class="post-link" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> </td> </tr> </table> </div> </article> </div> </main> <script>
   window.alFolio = {
     compatBootstrap: false
   };
