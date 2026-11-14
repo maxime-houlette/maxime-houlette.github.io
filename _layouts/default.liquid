@@ -18,7 +18,6 @@
       :root {
         --mh-page:   #f6f7fb;
         --mh-ink:    #1f2433;
-        --mh-navy:   #1e3a5f;
         --mh-accent: #2f5ec4;
       }
 
@@ -35,15 +34,15 @@
 
       .navbar, nav.navbar, #navbar, header.navbar { display: none !important; }
       a { color: inherit !important; }
-      aside a { color: #aaaaaa !important; }
+      aside a { color: #dce5f8 !important; }
       aside a:hover { color: #ffffff !important; }
 
       /* ── Sidebar ── */
       aside {
-        background-color: var(--mh-navy);
+        background-color: var(--mh-accent);
         color: #ffffff;
-        /* solid offset "shade" in accent blue, then a soft drop shadow */
-        box-shadow: 6px 0 0 var(--mh-accent), 14px 0 32px rgba(30, 58, 95, 0.18);
+        /* soft drop shadow onto the page */
+        box-shadow: 8px 0 32px rgba(30, 58, 95, 0.18);
         z-index: 2;
         width: 260px;
         min-width: 260px;
@@ -60,7 +59,7 @@
       /* ── Contenu principal ── */
       main {
         flex: 1;
-        margin-left: 266px;
+        margin-left: 260px;
         padding: 4rem 4rem;
         max-width: 780px;
         background: transparent !important;
@@ -107,14 +106,14 @@
       aside nav .nav-item {
         font-family: system-ui, sans-serif;
         font-size: 0.88rem;
-        color: #b8c2d3 !important;
+        color: #dce5f8 !important;
         text-decoration: none;
         padding: 0.35rem 0 0.35rem 0.85rem;
         border-left: 3px solid transparent;
         transition: color 0.15s, border-color 0.15s;
       }
       aside nav .nav-item:hover { color: #ffffff !important; border-left-color: rgba(255, 255, 255, 0.35); }
-      aside nav .nav-item.active { color: #ffffff !important; font-weight: 600; border-left-color: #7fa6f0; }
+      aside nav .nav-item.active { color: #ffffff !important; font-weight: 600; border-left-color: #ffffff; }
 
       footer { display: none !important; }
 
@@ -130,7 +129,7 @@
           text-align: center;
           align-items: center;
           padding: 1.2rem 1.5rem;  /* ← padding réduit */
-          box-shadow: 0 6px 0 var(--mh-accent), 0 14px 28px rgba(30, 58, 95, 0.15);
+          box-shadow: 0 8px 28px rgba(30, 58, 95, 0.15);
         }
         aside header { align-items: center !important; width: 100%; }
         aside nav { margin-top: 1rem !important; }
