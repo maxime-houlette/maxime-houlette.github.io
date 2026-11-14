@@ -2,9 +2,7 @@
 
 {% for year_entry in site.data.courses %}
 <div style="margin-bottom: 2.5rem;">
-  <h2 style="font-family: Georgia, serif; font-size: 1.2rem; font-weight: 700;
-              border-bottom: 1px solid #e0e0e0; padding-bottom: 0.4rem;
-              margin-bottom: 1.2rem; color: #222;">
+  <h2 class="section-title">
     {{ year_entry.year }}
   </h2>
 
@@ -12,9 +10,9 @@
   <div style="margin-bottom: 1.2rem;">
     <p style="margin: 0 0 0.2rem 0;">
       <strong>{{ course.title }}</strong>
-      <span style="color: #888; font-size: 0.85rem; margin-left: 0.5rem;">{{ course.level }} — {{ course.institution }}</span>
+      <span style="color: #888; margin-left: 0.5rem;">{{ course.level }} — {{ course.institution }}</span>
     </p>
-    <p style="margin: 0; color: #444; font-size: 0.92rem;">{{ course.description }}</p>
+    <p style="margin: 0; color: #444;">{{ course.description }}</p>
   </div>
   {% endfor %}
 </div>

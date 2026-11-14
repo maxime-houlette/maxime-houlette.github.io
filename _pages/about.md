@@ -19,7 +19,6 @@ permalink: /
   }
   .about-text p {
     font-family: Georgia, serif;
-    font-size: 0.97rem;
     line-height: 1.75;
     color: #222;
     margin-bottom: 1rem;
@@ -31,7 +30,6 @@ permalink: /
   }
   .edu-list li {
     font-family: Georgia, serif;
-    font-size: 0.95rem;
     line-height: 1.7;
     margin-bottom: 0.4rem;
     color: #222;
