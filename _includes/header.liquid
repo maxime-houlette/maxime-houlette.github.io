@@ -36,15 +36,19 @@
       <i class="fab fa-linkedin" style="width: 16px; text-align: center;"></i>
       LinkedIn
     </a>
+    <a href="{{ site.baseurl }}/assets/pdf/cv_Maxime_Houlette.pdf" target="_blank"
+       style="display: flex; align-items: center; gap: 0.6rem; color: #dce5f8; text-decoration: none; font-size: 0.82rem; font-family: system-ui, sans-serif;"
+       onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#dce5f8'">
+      <i class="fas fa-file-alt" style="width: 16px; text-align: center;"></i>
+      CV
+    </a>
   </div>
 
   <!-- Navigation poussée vers le bas -->
   <!-- The link of the current page gets the "active" class (accent bar, see default.liquid) -->
   <nav style="display: flex; flex-direction: column; gap: 0.15rem; margin-top: auto;">
     <a href="{{ site.baseurl }}/" class="nav-item{% if page.url == '/' %} active{% endif %}">About</a>
-    <a href="{{ site.baseurl }}/publications/" class="nav-item{% if page.url contains '/publications' %} active{% endif %}">Publications</a>
-    <a href="{{ site.baseurl }}/projects/" class="nav-item{% if page.url contains '/projects' %} active{% endif %}">Projects</a>
-    <a href="{{ site.baseurl }}/assets/pdf/cv_Maxime_Houlette.pdf" target="_blank" class="nav-item">CV</a>
+    <a href="{{ site.baseurl }}/research/" class="nav-item{% if page.url contains '/research' %} active{% endif %}">Research</a>
     <a href="{{ site.baseurl }}/teaching/" class="nav-item{% if page.url contains '/teaching' %} active{% endif %}">Teaching</a>
   </nav>
 

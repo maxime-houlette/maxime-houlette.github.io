@@ -1,10 +1,18 @@
 ---
-layout: default
-title: projects
+layout: null
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: true
-nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+sitemap: false
 ---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <!-- Projects now live on the Research page -->
+    <link rel="canonical" href="{{ '/research/' | absolute_url }}">
+    <meta http-equiv="refresh" content="0; url={{ '/research/' | relative_url }}">
+  </head>
+  <body>
+    <p>This page has moved to <a href="{{ '/research/' | relative_url }}">Research</a>.</p>
+  </body>
+</html>
