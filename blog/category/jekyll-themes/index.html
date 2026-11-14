@@ -3,6 +3,9 @@
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://maxime-houlette.github.io/blog/category/jekyll-themes/"> <style>
+      /* Thin monospace font for the ">" heading prompt (only the ">" glyph is downloaded) */
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&text=%3E&display=swap");
+
       :root,
       [data-theme="dark"],
       [data-theme="light"] {
@@ -68,7 +71,7 @@
         font-size: 1rem;
         line-height: 1.75;
       }
-      /* Headings: bold sans-serif with an accent slash, "/ Heading" */
+      /* Headings: bold sans-serif after a terminal-style prompt, "> Heading" */
       main h1:first-of-type,
       main .section-title {
         font-family: system-ui, -apple-system, 'Segoe UI', sans-serif !important;
@@ -83,11 +86,12 @@
       }
       main h1:first-of-type::before,
       main .section-title::before {
-        content: "/";
+        content: ">";
         color: var(--mh-accent);
-        font-weight: 400;
-        font-style: italic;
-        margin-right: 0.6rem;
+        font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+        font-weight: 200;
+        font-style: normal;
+        margin-right: 0.65rem;
       }
       main > :first-child,
       main .about-text > .section-title:first-child { margin-top: 0 !important; }
