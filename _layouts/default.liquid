@@ -3,6 +3,9 @@
   <head>
     {% include head.liquid %}
     <style>
+      /* Thin monospace font for the ">" heading prompt (only the ">" glyph is downloaded) */
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&text=%3E&display=swap");
+
       :root,
       [data-theme="dark"],
       [data-theme="light"] {
@@ -68,7 +71,7 @@
         font-size: 1rem;
         line-height: 1.75;
       }
-      /* Headings: bold sans-serif with an accent slash, "/ Heading" */
+      /* Headings: bold sans-serif after a terminal-style prompt, "> Heading" */
       main h1:first-of-type,
       main .section-title {
         font-family: system-ui, -apple-system, 'Segoe UI', sans-serif !important;
@@ -83,11 +86,12 @@
       }
       main h1:first-of-type::before,
       main .section-title::before {
-        content: "/";
+        content: ">";
         color: var(--mh-accent);
-        font-weight: 400;
-        font-style: italic;
-        margin-right: 0.6rem;
+        font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+        font-weight: 200;
+        font-style: normal;
+        margin-right: 0.65rem;
       }
       main > :first-child,
       main .about-text > .section-title:first-child { margin-top: 0 !important; }
