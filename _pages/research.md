@@ -21,4 +21,10 @@ My research focuses on the analysis of discontinuous Galerkin methods for wave p
 
 <p>Coming soon.</p>
 
+<p class="section-title">Events</p>
+
+<ul style="list-style: disc; padding-left: 1.4rem; margin: 0;">
+  <li><strong>CYRC seminar</strong>: talk, <em>High order methods for the high frequency wave equation</em>.</li>
+</ul>
+
 </div>
